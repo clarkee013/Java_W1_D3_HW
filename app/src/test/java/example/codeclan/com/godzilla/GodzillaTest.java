@@ -9,7 +9,7 @@ public class GodzillaTest {
 
     @Before
     public void before(){
-        godzilla = new Godzilla("Gary", 100, 50);
+        godzilla = new Godzilla("Gary", 100);
     }
 
     @Test

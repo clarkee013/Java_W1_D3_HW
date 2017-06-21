@@ -7,27 +7,27 @@ import static org.junit.Assert.*;
 
 
 public class SkyScraperTest {
-    Skyscraper skyscraper;
+    SkyScraper skyScraper;
 
 
     @Before
     public void before(){
-        skyscraper = new Skyscraper("building", 30);
+        skyScraper = new SkyScraper("building", 30);
     }
 
 
     @Test
     public void hasType(){
-        assertEquals("building", skyscraper.getType());
+        assertEquals("building", skyScraper.getType());
     }
 
     @Test
     public void hasHealthValue(){
-        assertEquals(30, skyscraper.getHealthValue());
+        assertEquals(30, skyScraper.getHealthValue());
     }
 
     @Test
     public void canBeDestroyed(){
-        assertEquals("Kabooooooooom", skyscraper.destroy());
+        assertEquals("Kabooooooooom", skyScraper.destroy());
     }
 }
